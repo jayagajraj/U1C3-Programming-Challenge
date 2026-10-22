@@ -11,40 +11,39 @@ public class Solution {
     
     public Solution(String model, int id) {
         //implement code here
-        calcModel = model;
+        this.calcModel = model;
+        this.idNumber = id;
     }
 
     public Solution(int id) {
         //implement code here
-        this.calcModel = "TI-84";
+        calcModel = "TI-84";
         this.idNumber = id;
     }
 
     public String getCalcModel() {
         //implement code here
-        getCalcModel();
-        return getCalcModel();
+        return calcModel();
     }
 
     public void setCalcModel(String newModel) {
         //implement code here
-        setCalcModel(newModel);
+       calcModel = newModel;
     }
 
     public int getIdNumber() {
-        //implement code here
-        getIdNumber();
-        return 0;
+        //implement code her
+        return idNumber;
     }
 
     public void setIdNumber(int newId) {
         //implement code here
-        setIdNumber(newId);
+        idNumber = newId;
     }
 
     public void incrementId() {
         //implement code here
-       this.idNumber = idNumber + 1;
+      idNumber++;
     }
 
     public double add(double num1, double num2) {
